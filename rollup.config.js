@@ -20,5 +20,13 @@ export default {
       minifyInternalExports: true
     }
   ],
-  plugins: [typescript({ tsconfig: './tsconfig.json' }), resolve()]
+  plugins: [
+    typescript({
+      tsconfig: './tsconfig.json',
+      declaration: true,
+      declarationDir: 'dist',
+      rootDir: 'src'
+    }),
+    resolve()
+  ]
 }

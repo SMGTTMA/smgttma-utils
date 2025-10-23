@@ -5,14 +5,13 @@
   "main": "dist/smgttma-utils.cjs.js",
   "module": "dist/smgttma-utils.esm.js",
   "browser": "dist/smgttma-utils.umd.js",
-  "types": "src/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "test": "jest"
   },
   "files": [
-    "src",
-    "dist/*.js"
+    "dist"
   ],
   "keywords": [],
   "author": "",
